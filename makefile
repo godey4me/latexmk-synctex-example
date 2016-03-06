@@ -15,13 +15,13 @@ all: article.pdf
 # -pvc (preview continuously) watches the directory for changes.
 # -quiet suppresses most status messages (https://tex.stackexchange.com/questions/40783/can-i-make-latexmk-quieter).
 article.pdf: article.tex
-	latexmk -quiet -bibtex $(WATCH) -f -pdf -pdflatex="pdflatex -synctex=1 -interaction=nonstopmode" -use-make article.tex
+	latexmk -quiet -bibtex $(PREVIEW_CONTINUOUSLY) -f -pdf -pdflatex="pdflatex -synctex=1 -interaction=nonstopmode" -use-make article.tex
 
-# The .PHONY rule keeps make from processing a file named "preview" or "clean".
-.PHONY: preview
-# Set the preview variable to -pvc to switch latexmk into the preview continuously mode
-preview: WATCH=-pvc
-preview: article.pdf
+# The .PHONY rule keeps make from processing a file named "watch" or "clean".
+.PHONY: watch
+# Set the PREVIEW_CONTINUOUSLY variable to -pvc to switch latexmk into the preview continuously mode
+watch: PREVIEW_CONTINUOUSLY=-pvc
+watch: article.pdf
 
 .PHONY: clean
 # -bibtex also removes the .bbl files (http://tex.stackexchange.com/a/83384/79184).
