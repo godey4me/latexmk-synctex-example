@@ -10,4 +10,4 @@ The `makefile` contains rules for compiling the `article.tex` LaTeX file using [
 
 If your editor and PDF viewer both support `SyncTeX` (e.g., [Sublime Text 3](https://www.sublimetext.com/) with [LaTeXTools](https://github.com/SublimeText/LaTeXTools) and [Skim](http://skim-app.sourceforge.net/)) you can jump in between them.
 
-![jump between editor and pdf viewer](http://paulklemm.com/zenf/media/2016-03-06-watch-latex-documents-using-latexmk/synctex_sublime_skim.gif)
+![jump between editor and pdf viewer](http://paulklemm.com/blog/media/2016-03-06-watch-latex-documents-using-latexmk/synctex_sublime_skim.gif)
