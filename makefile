@@ -26,4 +26,4 @@ watch: article.pdf
 .PHONY: clean
 # -bibtex also removes the .bbl files (http://tex.stackexchange.com/a/83384/79184).
 clean:
-	latexmk -CA -bibtex
+	latexmk -C -bibtex
