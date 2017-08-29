@@ -1,6 +1,6 @@
 # Use Latexmk With SyncTeX and Constant Preview
 
-This repository accompanies the blog post [paulklemm.com/zenf/blog/2016/03/06/watch-latex-documents-using-latexmk/](http://paulklemm.com/zenf/blog/2016/03/06/watch-latex-documents-using-latexmk/).
+This repository accompanies the blog post [paulklemm.com/blog/2014-07-16-use-github-for-scientific-writing/](http://paulklemm.com/blog/2014-07-16-use-github-for-scientific-writing/).
 
 The `makefile` contains rules for compiling the `article.tex` LaTeX file using [latexmk](https://www.ctan.org/pkg/latexmk/). The makefile can be used as follows:
 
